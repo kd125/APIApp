@@ -4,11 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather</title>
   </head>
   <body>
-    <div>
-      <ul class="daily-weather"></ul>
+    <div class="form">
+      <h1 class="title">Weather</h1>
+      <form action="">
+        <div class="input-container">
+          <input
+            type="text"
+            class="input"
+            id="city-input"
+            placeholder="Enter City Name"
+          />
+        </div>
+        <button type="button" class="submit" onclick="getWeather()">Get Weather</button>
+      </form>
+      <div id="Weatherdisplay" class="info-display">
+        <h3 class="subtitle">Temperature:</h3>
+        <div id="temperature" class="displaytext"></div>
+        <h3 class="subtitle">Description:</h3>
+        <div id="description" class="displaytext"></div>
+      </div>
     </div>
+    </div>
+    <div>
+      <!-- <button onclick="getWeather()">Get Weather</button> -->
+    <script src="index.js"></script>
   </body>
 </html>
